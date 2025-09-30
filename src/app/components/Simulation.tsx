@@ -228,15 +228,13 @@ const Simulation = () => {
         style={{
           backgroundColor: "#29589C",
         }}
-        initial={{ opacity: 0, y: 28 }}
-        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
         <div className="mx-auto 2xl:max-w-7xl pl-4 pr-4 md:pl-4 lg:pr-4 lg:pl-0 py-16 md:py-20">
         <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-stretch">
           {/* Left black statement panel */}
-            <div className="bg-black text-white rounded-r-[28px] md:rounded-r-[40px] px-6 py-10 md:px-10 md:py-14 md:basis-[45%]">
+            <div className="bg-black text-white rounded-r-[28px] md:rounded-r-[40px] flex items-center justify-center px-6 py-10 md:px-10 md:py-14 md:basis-[45%]">
              <motion.div
                className="flex flex-col gap-6 md:gap-10"
                initial="hidden"

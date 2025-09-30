@@ -1,14 +1,33 @@
+"use client"
 import React from 'react'
+import { motion } from 'framer-motion'
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] }
+  }
+}
+
+const stagger = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.1, delayChildren: 0.1 } }
+}
 
 const TalktoUs = () => {
   return (
-    <section
+    <motion.section
       className="relative w-full overflow-hidden rounded-[12px] bg-white"
       aria-labelledby="talk-to-us-heading"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
     >
-      <div className="mx-auto grid max-w-[1200px] grid-cols-1 md:grid-cols-2">
+      <motion.div className="mx-auto grid max-w-[1200px] grid-cols-1 md:grid-cols-2" variants={stagger}>
         {/* Left: real map image from the internet */}
-        <div className="relative h-[220px] w-full overflow-hidden bg-neutral-100 sm:h-[280px] md:h-full">
+        <motion.div className="relative h-[220px] w-full overflow-hidden bg-neutral-100 sm:h-[280px] md:h-full" variants={fadeUp}>
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg"
             alt="World map"
@@ -16,37 +35,38 @@ const TalktoUs = () => {
             loading="lazy"
             referrerPolicy="no-referrer"
           />
-        </div>
+        </motion.div>
 
         {/* Right: content */}
-        <div className="relative flex flex-col gap-6 px-5 py-8 md:px-8 md:py-16">
-          <h2
+        <motion.div className="relative flex flex-col gap-6 px-5 py-8 md:px-8 md:py-16" variants={stagger}>
+          <motion.h2
             id="talk-to-us-heading"
             className="text-[32px] font-extrabold tracking-[2px] text-black md:text-[48px] lg:text-[66px] [text-shadow:0_3px_0_rgba(0,0,0,0.15)]"
+            variants={fadeUp}
           >
             TALK TO US
-          </h2>
+          </motion.h2>
 
           <dl className="grid gap-3">
-            <div className="grid md:text-[19px] grid-cols-[120px_1fr] items-start gap-3">
+            <motion.div className="grid md:text-[19px] grid-cols-[120px_1fr] items-start gap-3" variants={fadeUp}>
               <dt className="font-bold tracking-[0.5px] text-neutral-900">ADDRESS:</dt>
               <dd className="m-0 text-neutral-800">71-75 Shelton St, London WC2H 9JQ</dd>
-            </div>
-            <div className="grid md:text-[19px] grid-cols-[120px_1fr] items-start gap-3">
+            </motion.div>
+            <motion.div className="grid md:text-[19px] grid-cols-[120px_1fr] items-start gap-3" variants={fadeUp}>
               <dt className="font-bold tracking-[0.5px] text-neutral-900">OFFICE:</dt>
               <dd className="m-0 text-neutral-800">(04) 298 3985 2092</dd>
-            </div>
-            <div className="grid  md:text-[19px] grid-cols-[120px_1fr] items-start gap-3">
+            </motion.div>
+            <motion.div className="grid  md:text-[19px] grid-cols-[120px_1fr] items-start gap-3" variants={fadeUp}>
               <dt className="font-bold tracking-[0.5px] text-neutral-900">WHATSAAP:</dt>
               <dd className="m-0 text-neutral-800">+447441396995</dd>
-            </div>
-            <div className="grid  md:text-[19px] grid-cols-[120px_1fr] items-start gap-3">
+            </motion.div>
+            <motion.div className="grid  md:text-[19px] grid-cols-[120px_1fr] items-start gap-3" variants={fadeUp}>
               <dt className="font-bold tracking-[0.5px] text-neutral-900">EMAIL:</dt>
               <dd className="m-0 text-neutral-800">info@ilynk.co</dd>
-            </div>
+            </motion.div>
           </dl>
 
-          <div className="mt-2 flex gap-8">
+          <motion.div className="mt-2 flex gap-8" variants={fadeUp}>
             <a
               className=""
               href="#"
@@ -73,10 +93,10 @@ const TalktoUs = () => {
               <svg xmlns="http://www.w3.org/2000/svg"  className='w-10 text-[#E9333D] h-10 ' width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M12 4c.855 0 1.732.022 2.582.058l1.004.048l.961.057l.9.061l.822.064a3.8 3.8 0 0 1 3.494 3.423l.04.425l.075.91c.07.943.122 1.971.122 2.954s-.052 2.011-.122 2.954l-.075.91l-.04.425a3.8 3.8 0 0 1-3.495 3.423l-.82.063l-.9.062l-.962.057l-1.004.048A62 62 0 0 1 12 20a62 62 0 0 1-2.582-.058l-1.004-.048l-.961-.057l-.9-.062l-.822-.063a3.8 3.8 0 0 1-3.494-3.423l-.04-.425l-.075-.91A41 41 0 0 1 2 12c0-.983.052-2.011.122-2.954l.075-.91l.04-.425A3.8 3.8 0 0 1 5.73 4.288l.821-.064l.9-.061l.962-.057l1.004-.048A62 62 0 0 1 12 4m-2 5.575v4.85c0 .462.5.75.9.52l4.2-2.425a.6.6 0 0 0 0-1.04l-4.2-2.424a.6.6 0 0 0-.9.52Z"/></g></svg>
             </a>
            
-          </div>
-        </div>
-      </div>
-    </section>
+          </motion.div>
+        </motion.div>
+      </motion.div>
+    </motion.section>
   )
 }
 
