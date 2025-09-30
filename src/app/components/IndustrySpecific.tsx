@@ -57,7 +57,7 @@ const IndustrySpecific = () => {
           variants={{ hidden: {}, show: { transition: { staggerChildren: 0.1 } } }}
         >
           <motion.ul
-            className="list-disc pl-6 lg:pl-8 space-y-3 text-black text-[18px] lg:text-[27px]"
+            className="list-disc pl-6 lg:pl-[10%] space-y-3 text-black text-[18px] lg:text-[27px]"
             variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0 } }}
             transition={{ duration: 0.45, ease: 'easeOut' }}
           >
@@ -68,7 +68,7 @@ const IndustrySpecific = () => {
             <li>Quotation Management</li>
           </motion.ul>
           <motion.ul
-            className="list-disc pl-6 lg:pl-8 space-y-3 text-black text-[18px] lg:text-[27px]"
+            className="list-disc pl-6  space-y-3 text-black text-[18px] lg:text-[27px]"
             variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0 } }}
             transition={{ duration: 0.45, ease: 'easeOut' }}
           >
@@ -110,7 +110,7 @@ const IndustrySpecific = () => {
           variants={{ hidden: {}, show: { transition: { staggerChildren: 0.1 } } }}
         >
           <motion.ul
-            className="list-disc pl-6 lg:pl-8 space-y-3 text-black text-[18px] lg:text-[27px]"
+            className="list-disc pl-6 lg:pl-[10%] space-y-3 text-black text-[18px] lg:text-[27px]"
             variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0 } }}
             transition={{ duration: 0.45, ease: 'easeOut' }}
           >
@@ -121,7 +121,7 @@ const IndustrySpecific = () => {
           </motion.ul>
           {/* Right list aligned with the left list on all breakpoints */}
           <motion.ul
-            className="list-disc pl-6 lg:pl-8 space-y-3 text-black text-[18px] lg:text-[27px]"
+            className="list-disc pl-6  space-y-3 text-black text-[18px] lg:text-[27px]"
             variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0 } }}
             transition={{ duration: 0.45, ease: 'easeOut' }}
           >

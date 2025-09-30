@@ -238,17 +238,17 @@ const Simulation = () => {
                viewport={{ once: true, amount: 0.2 }}
                variants={{ hidden: {}, show: { transition: { staggerChildren: 0.12 } } }}
              >
-               <motion.h3 className=" leading-[1.1] tracking-tight text-[40px] lg:text-[64px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>WE CAN</motion.h3>
-               <motion.h3 className=" leading-[1.1] tracking-tight text-[40px] lg:text-[64px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>MAKE YOUR</motion.h3>
-               <motion.h3 className=" leading-[1.1] tracking-tight text-[40px] lg:text-[64px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>VISION TURN</motion.h3>
-               <motion.h3 className=" leading-[1.1] tracking-tight text-[40px] lg:text-[64px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>INTO REALITY</motion.h3>
+               <motion.h3 className=" leading-[1.1] font-times font-bold text-[40px] lg:text-[64px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>WE CAN</motion.h3>
+               <motion.h3 className=" leading-[1.1] font-times font-bold text-[40px] lg:text-[64px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>MAKE YOUR</motion.h3>
+               <motion.h3 className=" leading-[1.1] font-times font-bold text-[40px] lg:text-[64px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>VISION TURN</motion.h3>
+               <motion.h3 className=" leading-[1.1] font-times font-bold text-[40px] lg:text-[64px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>INTO REALITY</motion.h3>
              </motion.div>
           </div>
 
           {/* Right form area */}
             <div className="lg:basis-[55%] w-full">
              <motion.form
-               className="flex flex-col gap-6 text-white"
+               className="flex flex-col xl:w-[90%] mx-auto gap-6 text-white"
                initial="hidden"
                whileInView="show"
                viewport={{ once: true, amount: 0.2 }}
@@ -257,44 +257,44 @@ const Simulation = () => {
               {/* Name */}
                <motion.div className="flex flex-col lg:flex-row lg:items-center lg:gap-6 gap-2" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
                 <label className="lg:w-[280px] text-[23px] font-semibold leading-tight">Name</label>
-                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-3 text-[18px] lg:text-[20px] outline-none" placeholder="Your name" />
+                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-[7px] text-[18px] lg:text-[20px] outline-none" />
                </motion.div>
 
               {/* Work Email */}
                <motion.div className="flex flex-col lg:flex-row lg:items-center lg:gap-6 gap-2" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
                 <label className="lg:w-[280px] text-[23px] font-semibold leading-tight">Work Email</label>
-                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-3 text-[18px] lg:text-[20px] outline-none" placeholder="name@company.com" />
+                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-[7px] text-[18px] lg:text-[20px] outline-none"  />
                </motion.div>
 
               {/* Contact Number */}
                <motion.div className="flex flex-col lg:flex-row lg:items-center lg:gap-6 gap-2" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
                 <label className="lg:w-[280px] text-[23px] font-semibold leading-tight">Contact Number</label>
-                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-3 text-[18px] lg:text-[20px] outline-none" placeholder="+1 555 000 0000" />
+                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-[7px] text-[18px] lg:text-[20px] outline-none"  />
                </motion.div>
 
               {/* Country */}
                <motion.div className="flex flex-col lg:flex-row lg:items-center lg:gap-6 gap-2" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
                 <label className="lg:w-[280px] text-[23px] font-semibold leading-tight">Country</label>
-                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-3 text-[18px] lg:text-[20px] outline-none" placeholder="Country" />
+                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-[7px] text-[18px] lg:text-[20px] outline-none"  />
                </motion.div>
 
               {/* Focused Solution */}
                <motion.div className="flex flex-col lg:flex-row lg:items-center lg:gap-6 gap-2" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
                 <label className="lg:w-[280px] text-[23px] font-semibold leading-tight">Focused Solution</label>
-                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-3 text-[18px] lg:text-[20px] outline-none" placeholder="e.g., VR Simulation, AI Agent" />
+                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-[7px] text-[18px] lg:text-[20px] outline-none"  />
                </motion.div>
 
               {/* Brief */}
                <motion.div className="flex flex-col gap-2" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
                 <label className="text-[23px] font-semibold leading-tight">Give Us A Brief About Your Idea</label>
-                <textarea rows={6} className="w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 py-3 lg:py-4 text-[18px] lg:text-[20px] outline-none" placeholder="Tell us a little about your project" />
+                <textarea rows={3} className="w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 py-3 lg:py-4 text-[18px] lg:text-[20px] outline-none"  />
                </motion.div>
 
                <motion.div className="flex flex-col sm:flex-row gap-4 sm:justify-end pt-4" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
-                <button type="reset" className="px-8 lg:px-12 h-[52px] lg:h-[56px] rounded-full text-[22px] lg:text-[28px] font-semibold uppercase tracking-[0.2em] text-[#143E70] bg-gradient-to-b from-[#F3F6FA] to-[#CAD6E4] shadow-[0_14px_28px_rgba(0,0,0,0.3)] border border-[#9FB3CA]">
+                <button type="reset" className="px-8 cursor-pointer h-[52px] lg:h-[56px] rounded-full text-[22px] lg:text-[28px] font-semibold uppercase tracking-[0.2em] text-[#143E70] bg-gradient-to-b from-[#F3F6FA] to-[#CAD6E4] shadow-[0_14px_28px_rgba(0,0,0,0.3)] border border-[#9FB3CA] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] hover:bg-[#153F74]  hover:-translate-y-1 active:scale-95 active:translate-y-0">
                   CLEAR
                 </button>
-                <button type="submit" className="px-8 lg:px-12 h-[52px] lg:h-[56px] rounded-full text-[22px] lg:text-[28px] font-semibold uppercase tracking-[0.2em] text-[#143E70] bg-gradient-to-b from-[#F3F6FA] to-[#CAD6E4] shadow-[0_14px_28px_rgba(0,0,0,0.3)] border border-[#9FB3CA]">
+                <button type="submit" className="px-8 h-[52px] cursor-pointer lg:h-[56px] rounded-full text-[22px] lg:text-[28px] font-semibold uppercase tracking-[0.2em] text-[#143E70] bg-gradient-to-b from-[#F3F6FA] to-[#CAD6E4] shadow-[0_14px_28px_rgba(0,0,0,0.3)] border border-[#9FB3CA] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] hover:bg-[#153F74]  hover:-translate-y-1 active:scale-95 active:translate-y-0">
                   SUBMIT
                 </button>
                </motion.div>
