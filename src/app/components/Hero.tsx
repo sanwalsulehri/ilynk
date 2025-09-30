@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -10,22 +12,44 @@ const Hero = () => {
       }}
     >
       <div className="mx-auto max-w-7xl px-4  py-16 md:py-16">
-        <h1 className="font-bold tracking-relaxed text-black text-[36px] md:text-[58px]">
+        <motion.h1
+          className="font-bold tracking-relaxed text-black text-[36px] md:text-[58px]"
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
           CONNECTING{" "}
           <span className="text-[#A02A42] inline-block">INTELLIGENCE</span>
           <br /> INTO YOUR BUSINESS
-        </h1>
+        </motion.h1>
 
-        <div className="mt-6 flex flex-col md:flex-row justify-between  gap-6 md:gap-10">
-          <p className="max-w-2xl text-black text-[18px] md:text-[27px] md:basis-1/2">
+        <motion.div
+          className="mt-6 flex flex-col md:flex-row justify-between  gap-6 md:gap-10"
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={{
+            hidden: {},
+            show: { transition: { staggerChildren: 0.12 } },
+          }}
+        >
+          <motion.p
+            className="max-w-2xl text-black text-[18px] md:text-[27px] md:basis-1/2"
+            variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+          >
             At iLynk Limited UK, we believe in “Linking Intelligence Into Your
             Business” by integrating smart, scalable solutions that drive growth
             and cost efficiency. Our mission is to help businesses streamline
             operations, optimize resources, and achieve sustainable expansion
             through cutting-edge technology.
-          </p>
+          </motion.p>
 
-          <div className="flex xl:-mt-10 md:basis-1/2 justify-center md:justify-end w-full">
+          <motion.div
+            className="flex xl:-mt-10 md:basis-1/2 justify-center md:justify-end w-full"
+            variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
             <video
               src="/herovid.mp4"
               autoPlay
@@ -34,27 +58,45 @@ const Hero = () => {
               playsInline
               className="h-auto w-full  rounded-lg"
             />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
       {/* Flagship IIOT Systems Section */}
-      <div className="mx-auto max-w-7xl px-4 pb-16 md:pb-24">
+      <motion.div
+        className="mx-auto max-w-7xl px-4 pb-16 md:pb-24"
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
         <div className="flex flex-col gap-8">
           <h1 className="font-bold leading-tight uppercase text-black text-[36px] md:text-[58px]">
             our flagship{" "}
             <span className="text-[#A02A42] inline-block">iiot systems</span>
           </h1>
 
-          <div className="flex flex-col mt-10 justify-start md:flex-row gap-8 items-start">
-            <div className="w-full h md:basis-[30%] md:max-w-[355px] aspect-square  rounded-xl">
+          <motion.div
+            className="flex flex-col mt-10 justify-start md:flex-row gap-8 items-start"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={{ hidden: {}, show: { transition: { staggerChildren: 0.12 } } }}
+          >
+            <motion.div
+              className="w-full h md:basis-[30%] md:max-w-[355px] aspect-square  rounded-xl"
+              variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}
+            >
               <img
                 src="/Black and White  X Letter Digital Company Logo (3).svg"
                 alt="IIoT illustration"
                 className="block h-[450px] w-[355px] object-cover"
               />
-            </div>
+            </motion.div>
 
-            <div className="w-full md:basis-[70%]">
+            <motion.div
+              className="w-full md:basis-[70%]"
+              variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}
+            >
               <h3 className="font-bold text-[#143E70] text-[24px] md:text-[32px] leading-snug">
                 Fork Link – Smart Fleet & Operator Management
               </h3>
@@ -69,15 +111,30 @@ const Hero = () => {
                 <li>Cost of Operations On A Click</li>
                 <li>Digital Incident & Compliance Management</li>
               </ul>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
       {/* Energy Link Section */}
-      <div className="mx-auto max-w-7xl px-4 pb-16 md:pb-24">
+      <motion.div
+        className="mx-auto max-w-7xl px-4 pb-16 md:pb-24"
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
         <div className="flex flex-col gap-8">
-          <div className="flex flex-col md:flex-row items-start gap-8">
-            <div className="w-full md:basis-[70%]">
+          <motion.div
+            className="flex flex-col md:flex-row items-start gap-8"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={{ hidden: {}, show: { transition: { staggerChildren: 0.12 } } }}
+          >
+            <motion.div
+              className="w-full md:basis-[70%]"
+              variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}
+            >
               <h3 className="font-bold text-[#143E70] text-[24px] md:text-[32px] leading-snug">
                 Energy Link – Smart Energy Management System
               </h3>
@@ -92,17 +149,20 @@ const Hero = () => {
                 <li>Load Balancing & Predictive Demand Forecasting</li>
                 <li>Carbon Footprint & Sustainability Tracking</li>
               </ul>
-            </div>
-            <div className="w-full md:basis-[30%] md:max-w-[355px] aspect-square rounded-xl ">
+            </motion.div>
+            <motion.div
+              className="w-full md:basis-[30%] md:max-w-[355px] aspect-square rounded-xl "
+              variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}
+            >
               <img
                 src="/Black and White  X Letter Digital Company Logo (4).svg"
                 alt="Energy management illustration"
                 className="block h-[450px] w-[355px] object-cover"
               />
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
