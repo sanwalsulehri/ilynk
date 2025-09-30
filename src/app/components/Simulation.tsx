@@ -204,7 +204,7 @@ const Simulation = () => {
 
             {/* Right Illustration */}
             <motion.div
-              className="flex justify-center h-full lg:basis-[55%]"
+              className="flex justify-center lg:mx-0 mx-auto  lg:w-auto w-fit h-full lg:basis-[55%]"
               variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}
             >
               <motion.img
