@@ -25,42 +25,42 @@ const TalktoUs = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
     >
-      <motion.div className="mx-auto grid max-w-[1200px] grid-cols-1 md:grid-cols-2" variants={stagger}>
+      <motion.div className="mx-auto grid max-w-[1200px] grid-cols-1 lg:grid-cols-2" variants={stagger}>
         {/* Left: real map image from the internet */}
-        <motion.div className="relative h-[220px] w-full overflow-hidden bg-neutral-100 sm:h-[280px] md:h-full" variants={fadeUp}>
+        <motion.div className="relative h-[220px] w-full overflow-hidden bg-neutral-100 sm:h-[280px] lg:h-full" variants={fadeUp}>
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg"
             alt="World map"
-            className="h-full w-full object-contain p-5 md:p-8"
+            className="h-full w-full object-contain p-5 lg:p-8"
             loading="lazy"
             referrerPolicy="no-referrer"
           />
         </motion.div>
 
         {/* Right: content */}
-        <motion.div className="relative flex flex-col gap-6 px-5 py-8 md:px-8 md:py-16" variants={stagger}>
+        <motion.div className="relative flex flex-col gap-6 px-5 py-8 lg:px-8 lg:py-16" variants={stagger}>
           <motion.h2
             id="talk-to-us-heading"
-            className="text-[32px] font-extrabold tracking-[2px] text-black md:text-[48px] lg:text-[66px] [text-shadow:0_3px_0_rgba(0,0,0,0.15)]"
+            className="text-[32px] font-extrabold tracking-[2px] text-black lg:text-[48px] lg:text-[66px] [text-shadow:0_3px_0_rgba(0,0,0,0.15)]"
             variants={fadeUp}
           >
             TALK TO US
           </motion.h2>
 
           <dl className="grid gap-3">
-            <motion.div className="grid md:text-[19px] grid-cols-[120px_1fr] items-start gap-3" variants={fadeUp}>
+            <motion.div className="grid lg:text-[19px] grid-cols-[120px_1fr] items-start gap-3" variants={fadeUp}>
               <dt className="font-bold tracking-[0.5px] text-neutral-900">ADDRESS:</dt>
               <dd className="m-0 text-neutral-800">71-75 Shelton St, London WC2H 9JQ</dd>
             </motion.div>
-            <motion.div className="grid md:text-[19px] grid-cols-[120px_1fr] items-start gap-3" variants={fadeUp}>
+            <motion.div className="grid lg:text-[19px] grid-cols-[120px_1fr] items-start gap-3" variants={fadeUp}>
               <dt className="font-bold tracking-[0.5px] text-neutral-900">OFFICE:</dt>
               <dd className="m-0 text-neutral-800">(04) 298 3985 2092</dd>
             </motion.div>
-            <motion.div className="grid  md:text-[19px] grid-cols-[120px_1fr] items-start gap-3" variants={fadeUp}>
+            <motion.div className="grid  lg:text-[19px] grid-cols-[120px_1fr] items-start gap-3" variants={fadeUp}>
               <dt className="font-bold tracking-[0.5px] text-neutral-900">WHATSAAP:</dt>
               <dd className="m-0 text-neutral-800">+447441396995</dd>
             </motion.div>
-            <motion.div className="grid  md:text-[19px] grid-cols-[120px_1fr] items-start gap-3" variants={fadeUp}>
+            <motion.div className="grid  lg:text-[19px] grid-cols-[120px_1fr] items-start gap-3" variants={fadeUp}>
               <dt className="font-bold tracking-[0.5px] text-neutral-900">EMAIL:</dt>
               <dd className="m-0 text-neutral-800">info@ilynk.co</dd>
             </motion.div>
