@@ -32,11 +32,11 @@ const TalktoUs = () => {
       >
         {/* Left: real map image from the internet */}
         <motion.div
-          className="relative h-[220px] w-full overflow-hidden bg-neutral-100 sm:h-[280px] lg:h-full"
+          className="relative h-[220px] w-full overflow-hidden  sm:h-[280px] lg:h-full"
           variants={fadeUp}
         >
           <Image
-            src="/worldmap-background-design.png"
+            src="/map-with-nobg.png"
             alt="World map"
             width={600}
             height={400}

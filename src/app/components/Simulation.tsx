@@ -115,7 +115,7 @@ const Simulation = () => {
             transition={{ type: "spring", stiffness: 120, damping: 18 }}
           >
             <motion.img
-              src="/Black and White  X Letter Digital Company Logo (1).svg"
+              src="/Black and White  X Letter Digital Company Logo.png"
               alt="VR simulation illustration"
               className="w-full max-w-[520px] lg:mx-0 mx-auto h-full object-cover select-none"
               loading="lazy"

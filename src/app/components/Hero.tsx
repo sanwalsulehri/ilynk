@@ -12,7 +12,7 @@ const Hero = () => {
           "linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(198,221,253,0.08) 8%, rgba(198,221,253,0.18) 14%, rgba(198,221,253,0.32) 18%, rgba(198,221,253,0.70) 22%, rgba(198,221,253,0.70) 58%, rgba(198,221,253,0.32) 70%, rgba(198,221,253,0.18) 80%, rgba(198,221,253,0.08) 90%, rgba(255,255,255,1) 98%, rgba(255,255,255,1) 100%)",
       }}
     >
-      <div className="mx-auto max-w-7xl px-4  py-16 lg:py-16">
+      <div className="mx-auto max-w-7xl px-4 mt-10  py-16 lg:py-16">
         <motion.div
           className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-10 items-start"
           initial="hidden"
@@ -25,7 +25,7 @@ const Hero = () => {
         >
           {/* Left: Heading and Paragraph */}
           <motion.div
-            className="lg:basis-1/2"
+            className="lg:basis-[55%]"
             variants={{ hidden: { opacity: 0, y: -20 }, show: { opacity: 1, y: 0 } }}
             transition={{ type: "tween", ease: [0.16, 1, 0.3, 1], duration: 0.75, delay: 0.1 }}
           >
@@ -35,8 +35,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ type: "tween", ease: [0.16, 1, 0.3, 1], duration: 0.8, delay: 0.1 }}
             >
-              CONNECTING{" "}
-              <span className="text-[#A02A42] inline-block">INTELLIGENCE</span>
+              CONNECTING{" "}<span className="text-[#A02A42] inline-block">INTELLIGENCE</span>
               <br /> INTO YOUR BUSINESS
             </motion.h1>
 
@@ -56,12 +55,12 @@ const Hero = () => {
 
           {/* Right: Video */}
           <motion.div
-            className="flex xl:-mt-10 lg:basis-1/2 justify-center lg:justify-end w-full"
+            className="flex xl:-mt-10 lg:basis-[45%] justify-center lg:justify-end w-full"
             variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}
             transition={{ type: "tween", ease: [0.16, 1, 0.3, 1], duration: 0.75, delay: 0.35 }}
           >
             <Image
-              src="/Black and White  X Letter Digital Company Logo.png"
+              src="/Black and White  X Letter Digital Company Logo (1).svg"
               width={450}
               height={450}
               alt="hero"
