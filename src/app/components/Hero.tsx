@@ -46,8 +46,8 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ type: "tween", ease: [0.16, 1, 0.3, 1], duration: 0.75, delay: 0.25 }}
             >
-              At iLynk Limited UK, we believe in &ldquo;Linking Intelligence Into Your
-              Business&rdquo; by integrating smart, scalable solutions that drive growth
+              At iLynk Limited UK, we believe in &quot;Linking Intelligence Into Your
+              Business&quot; by integrating smart, scalable solutions that drive growth
               and cost efficiency. Our mission is to help businesses streamline
               operations, optimize resources, and achieve sustainable expansion
               through cutting-edge technology.
