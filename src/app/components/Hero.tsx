@@ -46,8 +46,8 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ type: "tween", ease: [0.16, 1, 0.3, 1], duration: 0.75, delay: 0.25 }}
             >
-              At iLynk Limited UK, we believe in "Linking Intelligence Into Your
-              Business" by integrating smart, scalable solutions that drive growth
+              At iLynk Limited UK, we believe in &ldquo;Linking Intelligence Into Your
+              Business&rdquo; by integrating smart, scalable solutions that drive growth
               and cost efficiency. Our mission is to help businesses streamline
               operations, optimize resources, and achieve sustainable expansion
               through cutting-edge technology.
@@ -96,9 +96,11 @@ const Hero = () => {
               variants={{ hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0 } }}
               transition={{ type: "tween", ease: [0.16, 1, 0.3, 1], duration: 0.6, delay: 0.15 }}
             >
-              <img
+              <Image
                 src="/Black and White  X Letter Digital Company Logo (3).svg"
                 alt="IIoT illustration"
+                width={355}
+                height={450}
                 className="block h-full lg:h-[450px] w-full mx-auto lg:mx-0 lg:max-w-[355px] object-cover"
               />
             </motion.div>
@@ -184,9 +186,11 @@ const Hero = () => {
               variants={{ hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0 } }}
               transition={{ type: "tween", ease: [0.16, 1, 0.3, 1], duration: 0.6, delay: 0.15 }}
             >
-              <img
+              <Image
                 src="/Black and White  X Letter Digital Company Logo (4).svg"
                 alt="Energy management illustration"
+                width={355}
+                height={450}
                 className="block h-full lg:h-[450px] mx-auto lg:mx-0 w-full lg:max-w-[355px] object-cover"
               />
             </motion.div>

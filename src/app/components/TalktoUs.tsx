@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -34,12 +35,13 @@ const TalktoUs = () => {
           className="relative h-[220px] w-full overflow-hidden bg-neutral-100 sm:h-[280px] lg:h-full"
           variants={fadeUp}
         >
-          <img
+          <Image
             src="/worldmap-background-design.png"
             alt="World map"
+            width={600}
+            height={400}
             className="h-full w-full object-contain p-5 lg:p-8"
             loading="lazy"
-            referrerPolicy="no-referrer"
           />
         </motion.div>
 
