@@ -14,9 +14,9 @@ const Hero = () => {
       <div className="mx-auto max-w-7xl px-4  py-16 lg:py-16">
         <motion.h1
           className="font-bold tracking-relaxed text-black text-[36px] lg:text-[58px]"
-          initial={{ opacity: 0, y: 24 }}
+          initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ type: "tween", ease: [0.16, 1, 0.3, 1], duration: 0.8, delay: 0.1 }}
         >
           CONNECTING{" "}
           <span className="text-[#A02A42] inline-block">INTELLIGENCE</span>
@@ -35,8 +35,8 @@ const Hero = () => {
         >
           <motion.p
             className="max-w-2xl text-black text-[18px] lg:text-[27px] lg:basis-1/2"
-            variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
+            variants={{ hidden: { opacity: 0, y: -20 }, show: { opacity: 1, y: 0 } }}
+            transition={{ type: "tween", ease: [0.16, 1, 0.3, 1], duration: 0.75, delay: 0.25 }}
           >
             At iLynk Limited UK, we believe in “Linking Intelligence Into Your
             Business” by integrating smart, scalable solutions that drive growth
@@ -48,7 +48,7 @@ const Hero = () => {
           <motion.div
             className="flex xl:-mt-10 lg:basis-1/2 justify-center lg:justify-end w-full"
             variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ type: "tween", ease: [0.16, 1, 0.3, 1], duration: 0.75, delay: 0.35 }}
           >
             <video
               src="/herovid.mp4"
@@ -80,11 +80,12 @@ const Hero = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.3 }}
-            variants={{ hidden: {}, show: { transition: { staggerChildren: 0.12 } } }}
+            variants={{ hidden: {}, show: { transition: { staggerChildren: 0.16, delayChildren: 0.1 } } }}
           >
             <motion.div
               className="w-full  lg:basis-[30%] lg:max-w-[355px] lg:aspect-square  rounded-xl"
-              variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}
+              variants={{ hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0 } }}
+              transition={{ type: "tween", ease: [0.16, 1, 0.3, 1], duration: 0.6, delay: 0.15 }}
             >
               <img
                 src="/Black and White  X Letter Digital Company Logo (3).svg"
@@ -95,22 +96,33 @@ const Hero = () => {
 
             <motion.div
               className="w-full lg:basis-[70%]"
-              variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}
+              variants={{ hidden: { opacity: 0, y: -24 }, show: { opacity: 1, y: 0 } }}
+              transition={{ type: "tween", ease: [0.16, 1, 0.3, 1], duration: 0.7, delay: 0.2 }}
             >
-              <h3 className="font-bold text-[#143E70] text-[24px] lg:text-[32px] leading-snug">
+              <motion.h3
+                className="font-bold text-[#143E70] text-[24px] lg:text-[32px] leading-snug"
+                initial={false}
+                variants={{}}
+              >
                 Fork Link – Smart Fleet & Operator Management
-              </h3>
-              <p className="my-8 text-[#000] text-[18px] lg:text-[27px] max-w-4xl">
+              </motion.h3>
+              <motion.p className="my-8 text-[#000] text-[18px] lg:text-[27px] max-w-4xl" initial={false} variants={{}}>
                 ForkLink provides real-time insights through its intelligent
                 hardware and cloud-based software.
-              </p>
-              <ul className="lg:ml-6 space-y-3 text-[#000] text-[18px] lg:text-[27px] list-disc pl-6">
-                <li>Live Task Assignment & Optimization</li>
-                <li>Operator Behavior & Safety Enforcement</li>
-                <li>Real-Time Equipment Insights</li>
-                <li>Cost of Operations On A Click</li>
-                <li>Digital Incident & Compliance Management</li>
-              </ul>
+              </motion.p>
+              <motion.ul
+                className="lg:ml-6 space-y-3 text-[#000] text-[18px] lg:text-[27px] list-disc pl-6"
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.2 }}
+                variants={{ hidden: {}, show: { transition: { staggerChildren: 0.14, delayChildren: 0.1 } } }}
+              >
+                <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Live Task Assignment & Optimization</motion.li>
+                <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Operator Behavior & Safety Enforcement</motion.li>
+                <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Real-Time Equipment Insights</motion.li>
+                <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Cost of Operations On A Click</motion.li>
+                <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Digital Incident & Compliance Management</motion.li>
+              </motion.ul>
             </motion.div>
           </motion.div>
         </div>
@@ -118,10 +130,10 @@ const Hero = () => {
       {/* Energy Link Section */}
       <motion.div
         className="mx-auto max-w-7xl px-4 pb-16 lg:pb-24"
-        initial={{ opacity: 0, y: 24 }}
+        initial={{ opacity: 0, y: -24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
       >
         <div className="flex flex-col gap-8">
           <motion.div
@@ -134,26 +146,34 @@ const Hero = () => {
           >
             <motion.div
               className="w-full lg:basis-[70%]"
-              variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}
+              variants={{ hidden: { opacity: 0, y: -24 }, show: { opacity: 1, y: 0 } }}
+              transition={{ type: "tween", ease: [0.16, 1, 0.3, 1], duration: 0.7, delay: 0.15 }}
             >
-              <h3 className="font-bold text-[#143E70] text-[24px] lg:text-[32px] leading-snug">
+              <motion.h3 className="font-bold text-[#143E70] text-[24px] lg:text-[32px] leading-snug" initial={false} variants={{}}>
                 Energy Link – Smart Energy Management System
-              </h3>
-              <p className="my-8 text-[#000] text-[18px] lg:text-[27px] max-w-4xl">
+              </motion.h3>
+              <motion.p className="my-8 text-[#000] text-[18px] lg:text-[27px] max-w-4xl" initial={false} variants={{}}>
                 PowerLink is an intelligent Energy Management System (EMS).
                 Built with IoT-based metering and AI-powered analytics,
                 PowerLink optimizes Industrial Energy Consumption.
-              </p>
-              <ul className="lg:ml-6 space-y-3 text-[#000] text-[18px] lg:text-[27px] list-disc pl-6">
-                <li>Real-Time Energy Monitoring</li>
-                <li>Automated Cost Optimization</li>
-                <li>Load Balancing & Predictive Demand Forecasting</li>
-                <li>Carbon Footprint & Sustainability Tracking</li>
-              </ul>
+              </motion.p>
+              <motion.ul
+                className="lg:ml-6 space-y-3 text-[#000] text-[18px] lg:text-[27px] list-disc pl-6"
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.2 }}
+                variants={{ hidden: {}, show: { transition: { staggerChildren: 0.14, delayChildren: 0.1 } } }}
+              >
+                <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Real-Time Energy Monitoring</motion.li>
+                <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Automated Cost Optimization</motion.li>
+                <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Load Balancing & Predictive Demand Forecasting</motion.li>
+                <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Carbon Footprint & Sustainability Tracking</motion.li>
+              </motion.ul>
             </motion.div>
             <motion.div
               className="w-full lg:basis-[30%] lg:max-w-[355px] lg:aspect-square rounded-xl "
-              variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}
+              variants={{ hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0 } }}
+              transition={{ type: "tween", ease: [0.16, 1, 0.3, 1], duration: 0.6, delay: 0.15 }}
             >
               <img
                 src="/Black and White  X Letter Digital Company Logo (4).svg"
@@ -169,3 +189,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
+

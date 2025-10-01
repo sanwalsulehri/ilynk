@@ -54,29 +54,33 @@ const IndustrySpecific = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
-          variants={{ hidden: {}, show: { transition: { staggerChildren: 0.1 } } }}
+          variants={{ hidden: {}, show: { transition: { staggerChildren: 0.12, delayChildren: 0.1 } } }}
         >
           <motion.ul
             className="list-disc pl-6 lg:pl-[10%] space-y-3 text-black text-[18px] lg:text-[27px]"
-            variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0 } }}
-            transition={{ duration: 0.45, ease: 'easeOut' }}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={{ hidden: {}, show: { transition: { staggerChildren: 0.12 } } }}
           >
-            <li>Contract Management</li>
-            <li>Equipment Management</li>
-            <li>Employee Management</li>
-            <li>Technical Job Management</li>
-            <li>Quotation Management</li>
+            <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Contract Management</motion.li>
+            <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Equipment Management</motion.li>
+            <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Employee Management</motion.li>
+            <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Technical Job Management</motion.li>
+            <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Quotation Management</motion.li>
           </motion.ul>
           <motion.ul
             className="list-disc pl-6  space-y-3 text-black text-[18px] lg:text-[27px]"
-            variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0 } }}
-            transition={{ duration: 0.45, ease: 'easeOut' }}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={{ hidden: {}, show: { transition: { staggerChildren: 0.12, delayChildren: 0.08 } } }}
           >
-            <li>Order Management</li>
-            <li>Parts &amp; Inventory Management</li>
-            <li>Digital Order Processing</li>
-            <li>Accounts Management</li>
-            <li>Logistics &amp; Operations Management</li>
+            <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Order Management</motion.li>
+            <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Parts &amp; Inventory Management</motion.li>
+            <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Digital Order Processing</motion.li>
+            <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Accounts Management</motion.li>
+            <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Logistics &amp; Operations Management</motion.li>
           </motion.ul>
         </motion.div>
 
@@ -107,27 +111,31 @@ const IndustrySpecific = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
-          variants={{ hidden: {}, show: { transition: { staggerChildren: 0.1 } } }}
+          variants={{ hidden: {}, show: { transition: { staggerChildren: 0.12, delayChildren: 0.1 } } }}
         >
           <motion.ul
             className="list-disc pl-6 lg:pl-[10%] space-y-3 text-black text-[18px] lg:text-[27px]"
-            variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0 } }}
-            transition={{ duration: 0.45, ease: 'easeOut' }}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={{ hidden: {}, show: { transition: { staggerChildren: 0.12 } } }}
           >
-            <li>Design-to-Product Workflow</li>
-            <li>Centralized Order Management</li>
-            <li>Customer Management</li>
-            <li>Unified Web &amp; Social Management</li>
+            <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Design-to-Product Workflow</motion.li>
+            <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Centralized Order Management</motion.li>
+            <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Customer Management</motion.li>
+            <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Unified Web &amp; Social Management</motion.li>
           </motion.ul>
           {/* Right list aligned with the left list on all breakpoints */}
           <motion.ul
             className="list-disc pl-6  space-y-3 text-black text-[18px] lg:text-[27px]"
-            variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0 } }}
-            transition={{ duration: 0.45, ease: 'easeOut' }}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={{ hidden: {}, show: { transition: { staggerChildren: 0.12, delayChildren: 0.08 } } }}
           >
-            <li>Employee &amp; Vendor Management</li>
-            <li>Inventory &amp; POS Integration</li>
-            <li>Store Performance Dashboards</li>
+            <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Employee &amp; Vendor Management</motion.li>
+            <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Inventory &amp; POS Integration</motion.li>
+            <motion.li variants={{ hidden: { opacity: 0, y: -12 }, show: { opacity: 1, y: 0 } }} transition={{ duration: 0.45 }}>Store Performance Dashboards</motion.li>
           </motion.ul>
         </motion.div>
       </div>
