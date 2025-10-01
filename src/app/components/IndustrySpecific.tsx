@@ -14,7 +14,7 @@ const IndustrySpecific = () => {
       <div className="mx-auto max-w-7xl px-4 py-12 lg:py-16">
         {/* Main Heading */}
         <motion.h2
-          className="font-bold tracking-tight uppercase text-black text-[36px] lg:text-[60px] leading-tight"
+          className="font-bold tracking-tight uppercase text-black text-[32px] lg:text-[45px] leading-tight"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -25,7 +25,7 @@ const IndustrySpecific = () => {
 
         {/* Sub Heading */}
         <motion.h3
-          className="mt-8 font-bold text-[#143E70] text-[24px] lg:text-[32px] leading-snug "
+          className="mt-8 font-bold text-[#143E70] text-[22px] lg:text-[28px] leading-snug "
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -36,7 +36,7 @@ const IndustrySpecific = () => {
 
         {/* Description */}
         <motion.p
-          className="mt-6 text-black text-[18px] lg:text-[27px] "
+          className="mt-6 text-black text-[16px] lg:text-[20px] "
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -61,7 +61,7 @@ const IndustrySpecific = () => {
           }}
         >
           <motion.ul
-            className="list-disc pl-6 lg:pl-[10%] space-y-3 text-black text-[18px] lg:text-[27px]"
+            className="list-disc pl-6 lg:pl-[10%] space-y-3 text-black text-[16px] lg:text-[20px]"
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.25 }}
@@ -117,7 +117,7 @@ const IndustrySpecific = () => {
             </motion.li>
           </motion.ul>
           <motion.ul
-            className="list-disc pl-6  space-y-3 text-black text-[18px] lg:text-[27px]"
+            className="list-disc pl-6  space-y-3 text-black text-[16px] lg:text-[20px]"
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.25 }}
@@ -178,7 +178,7 @@ const IndustrySpecific = () => {
 
         {/* Moda Flow Section (copied styling, new content) */}
         <motion.h3
-          className="mt-16 font-bold text-[#143E70] text-[24px] lg:text-[32px] leading-snug "
+          className="mt-16 font-bold text-[#143E70] text-[22px] lg:text-[28px] leading-snug "
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -187,7 +187,7 @@ const IndustrySpecific = () => {
           MODA FLOW – Complete Fashion Business Management Solution
         </motion.h3>
         <motion.p
-          className="mt-6 text-black text-[18px] lg:text-[27px] "
+          className="mt-6 text-black text-[16px] lg:text-[20px] "
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -210,7 +210,7 @@ const IndustrySpecific = () => {
           }}
         >
           <motion.ul
-            className="list-disc pl-6 lg:pl-[10%] space-y-3 text-black text-[18px] lg:text-[27px]"
+            className="list-disc pl-6 lg:pl-[10%] space-y-3 text-black text-[16px] lg:text-[20px]"
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.25 }}
@@ -258,7 +258,7 @@ const IndustrySpecific = () => {
           </motion.ul>
           {/* Right list aligned with the left list on all breakpoints */}
           <motion.ul
-            className="list-disc pl-6  space-y-3 text-black text-[18px] lg:text-[27px]"
+            className="list-disc pl-6  space-y-3 text-black text-[16px] lg:text-[20px]"
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.25 }}

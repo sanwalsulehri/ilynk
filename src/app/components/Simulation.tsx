@@ -47,7 +47,7 @@ const Simulation = () => {
     >
       <div className="mx-auto max-w-7xl px-4 py-16 lg:py-20">
         <motion.h2
-          className="font-bold tracking-tight text-[#143E70] text-[36px] lg:text-[60px]"
+          className="font-bold tracking-tight text-[#143E70] text-[32px] lg:text-[45px]"
           initial={{ opacity: 0, y: -24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -69,7 +69,7 @@ const Simulation = () => {
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
           >
             <motion.p
-              className="text-[#000] font-bold text-[18px] lg:text-[27px] leading-snug"
+              className="text-[#000] font-bold text-[16px] lg:text-[20px] leading-snug"
               initial={{ opacity: 0, y: -16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
@@ -80,7 +80,7 @@ const Simulation = () => {
             </motion.p>
 
             <motion.p
-              className="mt-8 text-[#000] text-[18px] lg:text-[27px]  leading-snug"
+              className="mt-8 text-[#000] text-[16px] lg:text-[20px]  leading-snug"
               initial={{ opacity: 0, y: -16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
@@ -94,7 +94,7 @@ const Simulation = () => {
             </motion.p>
 
             <motion.ul
-              className="mt-6 space-y-3 list-disc text-[#000] text-[18px] lg:text-[27px] pl-10"
+              className="mt-6 space-y-3 list-disc text-[#000] text-[16px] lg:text-[20px] pl-10"
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
@@ -200,7 +200,7 @@ const Simulation = () => {
 
       <div className="mx-auto max-w-7xl px-4 py-16 lg:py-20">
           <motion.h2
-            className="font-bold tracking-tight text-[#000] text-[36px] lg:text-[60px]"
+            className="font-bold tracking-tight text-[#000] text-[32px] lg:text-[45px]"
             initial={{ opacity: 0, y: -24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -219,7 +219,7 @@ const Simulation = () => {
               transition={{ duration: 0.65, ease: "easeOut", delay: 0.15 }}
             >
               <motion.p
-                className="text-[#000] font-bold text-[18px] lg:text-[27px] leading-snug"
+                className="text-[#000] font-bold text-[16px] lg:text-[25px] leading-snug"
                 initial={{ opacity: 0, y: -14 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
@@ -229,7 +229,7 @@ const Simulation = () => {
               </motion.p>
 
               <motion.p
-                className="mt-8 text-[#000] text-[18px] lg:text-[27px] leading-snug"
+                className="mt-8 text-[#000] text-[16px] lg:text-[20px] leading-snug"
                 initial={{ opacity: 0, y: -14 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
@@ -243,7 +243,7 @@ const Simulation = () => {
               </motion.p>
 
               <motion.p
-                className="mt-6 text-[#000] text-[18px] lg:text-[27px] leading-snug"
+                className="mt-6 text-[#000] text-[16px] lg:text-[20px] leading-snug"
                 initial={{ opacity: 0, y: -14 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
@@ -264,7 +264,7 @@ const Simulation = () => {
               <motion.img
                 src="/Black and White  X Letter Digital Company Logo (2).svg"
                 alt="AI agents illustration"
-                className="w-full max-w-[720px] lg:mx-0 mx-auto  h-full object-cover select-none"
+                className="w-full max-w-[470px] lg:mx-0 mx-auto  h-full object-cover select-none"
                 loading="lazy"
                 initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -296,10 +296,10 @@ const Simulation = () => {
                viewport={{ once: true, amount: 0.2 }}
                variants={{ hidden: {}, show: { transition: { staggerChildren: 0.12 } } }}
              >
-               <motion.h3 className=" leading-[1.1] font-times font-bold text-[40px] lg:text-[64px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>WE CAN</motion.h3>
-               <motion.h3 className=" leading-[1.1] font-times font-bold text-[40px] lg:text-[64px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>MAKE YOUR</motion.h3>
-               <motion.h3 className=" leading-[1.1] font-times font-bold text-[40px] lg:text-[64px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>VISION TURN</motion.h3>
-               <motion.h3 className=" leading-[1.1] font-times font-bold text-[40px] lg:text-[64px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>INTO REALITY</motion.h3>
+               <motion.h3 className=" leading-[1.1] font-times font-bold text-[36px] lg:text-[56px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>WE CAN</motion.h3>
+               <motion.h3 className=" leading-[1.1] font-times font-bold text-[36px] lg:text-[56px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>MAKE YOUR</motion.h3>
+               <motion.h3 className=" leading-[1.1] font-times font-bold text-[36px] lg:text-[56px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>VISION TURN</motion.h3>
+               <motion.h3 className=" leading-[1.1] font-times font-bold text-[36px] lg:text-[56px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>INTO REALITY</motion.h3>
              </motion.div>
           </div>
 
@@ -314,45 +314,45 @@ const Simulation = () => {
              >
               {/* Name */}
                <motion.div className="flex flex-col lg:flex-row lg:items-center lg:gap-6 gap-2" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
-                <label className="lg:w-[280px] text-[23px] font-semibold leading-tight">Name</label>
-                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-[7px] text-[18px] lg:text-[20px] outline-none" />
+                <label className="lg:w-[280px] text-[21px] font-semibold leading-tight">Name</label>
+                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-[7px] text-[16px] lg:text-[18px] outline-none" />
                </motion.div>
 
               {/* Work Email */}
                <motion.div className="flex flex-col lg:flex-row lg:items-center lg:gap-6 gap-2" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
-                <label className="lg:w-[280px] text-[23px] font-semibold leading-tight">Work Email</label>
-                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-[7px] text-[18px] lg:text-[20px] outline-none"  />
+                <label className="lg:w-[280px] text-[21px] font-semibold leading-tight">Work Email</label>
+                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-[7px] text-[16px] lg:text-[18px] outline-none"  />
                </motion.div>
 
               {/* Contact Number */}
                <motion.div className="flex flex-col lg:flex-row lg:items-center lg:gap-6 gap-2" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
-                <label className="lg:w-[280px] text-[23px] font-semibold leading-tight">Contact Number</label>
-                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-[7px] text-[18px] lg:text-[20px] outline-none"  />
+                <label className="lg:w-[280px] text-[21px] font-semibold leading-tight">Contact Number</label>
+                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-[7px] text-[16px] lg:text-[18px] outline-none"  />
                </motion.div>
 
               {/* Country */}
                <motion.div className="flex flex-col lg:flex-row lg:items-center lg:gap-6 gap-2" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
-                <label className="lg:w-[280px] text-[23px] font-semibold leading-tight">Country</label>
-                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-[7px] text-[18px] lg:text-[20px] outline-none"  />
+                <label className="lg:w-[280px] text-[21px] font-semibold leading-tight">Country</label>
+                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-[7px] text-[16px] lg:text-[18px] outline-none"  />
                </motion.div>
 
               {/* Focused Solution */}
                <motion.div className="flex flex-col lg:flex-row lg:items-center lg:gap-6 gap-2" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
-                <label className="lg:w-[280px] text-[23px] font-semibold leading-tight">Focused Solution</label>
-                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-[7px] text-[18px] lg:text-[20px] outline-none"  />
+                <label className="lg:w-[280px] text-[21px] font-semibold leading-tight">Focused Solution</label>
+                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-[7px] text-[16px] lg:text-[18px] outline-none"  />
                </motion.div>
 
               {/* Brief */}
                <motion.div className="flex flex-col gap-2" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
-                <label className="text-[23px] font-semibold leading-tight">Give Us A Brief About Your Idea</label>
-                <textarea rows={3} className="w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 py-3 lg:py-4 text-[18px] lg:text-[20px] outline-none"  />
+                <label className="text-[21px] font-semibold leading-tight">Give Us A Brief About Your Idea</label>
+                <textarea rows={3} className="w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 py-3 lg:py-4 text-[16px] lg:text-[18px] outline-none"  />
                </motion.div>
 
              <motion.div className="flex flex-col sm:flex-row gap-4 sm:justify-end pt-4" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
-              <motion.button type="reset" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }} className="px-8 cursor-pointer h-[52px] lg:h-[56px] rounded-full text-[22px] lg:text-[28px] font-semibold uppercase tracking-[0.2em] text-[#143E70] bg-gradient-to-b from-[#F3F6FA] to-[#CAD6E4] shadow-[0_14px_28px_rgba(0,0,0,0.3)] border border-[#9FB3CA] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] hover:bg-[#153F74]  hover:-translate-y-1 active:scale-95 active:translate-y-0">
+              <motion.button type="reset" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }} className="px-8 cursor-pointer h-[52px] lg:h-[56px] rounded-full text-[20px] lg:text-[26px] font-semibold uppercase tracking-[0.2em] text-[#143E70] bg-gradient-to-b from-[#F3F6FA] to-[#CAD6E4] shadow-[0_14px_28px_rgba(0,0,0,0.3)] border border-[#9FB3CA] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] hover:bg-[#153F74]  hover:-translate-y-1 active:scale-95 active:translate-y-0">
                   CLEAR
               </motion.button>
-              <motion.button type="submit" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }} className="px-8 h-[52px] cursor-pointer lg:h-[56px] rounded-full text-[22px] lg:text-[28px] font-semibold uppercase tracking-[0.2em] text-[#143E70] bg-gradient-to-b from-[#F3F6FA] to-[#CAD6E4] shadow-[0_14px_28px_rgba(0,0,0,0.3)] border border-[#9FB3CA] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] hover:bg-[#153F74]  hover:-translate-y-1 active:scale-95 active:translate-y-0">
+              <motion.button type="submit" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }} className="px-8 h-[52px] cursor-pointer lg:h-[56px] rounded-full text-[20px] lg:text-[26px] font-semibold uppercase tracking-[0.2em] text-[#143E70] bg-gradient-to-b from-[#F3F6FA] to-[#CAD6E4] shadow-[0_14px_28px_rgba(0,0,0,0.3)] border border-[#9FB3CA] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] hover:bg-[#153F74]  hover:-translate-y-1 active:scale-95 active:translate-y-0">
                   SUBMIT
               </motion.button>
              </motion.div>
