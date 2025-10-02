@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 
 const navItems = [
-  { href: '/', label: '', withIcon: true },
+  { href: '/', label: 'Home'},
   { href: '/about', label: 'About Us' },
   { href: '/iiot', label: 'IIoT Systems' },
   { href: '/saas', label: 'SaaS' },
@@ -29,25 +29,15 @@ const NavBar = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden absolute right-0 lg:block">
-          <ul className="flex items-center gap-8 rounded-l-full bg-[#153F74] px-10 py-5">
+        <nav className="hidden lg:block">
+          <ul className="flex items-center gap-8 px-0 py-0">
             {navItems.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="flex items-center gap-2 text-2xl font-bold text-white transition-opacity hover:opacity-80"
+                  className="flex items-center gap-2 text-lg font-semibold text-[#153F74] transition-colors hover:text-[#0f2e56]"
                 >
-                  {item.withIcon && (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 30 30"
-                      fill="currentColor"
-                      className="h-10 inline-block shrink-0 w-10"
-                      aria-hidden
-                    >
-                      <path d="M12 3.172 2.293 12.88a1 1 0 0 0 1.414 1.414L5 13.001V20a1 1 0 0 0 1 1h4v-5h4v5h4a1 1 0 0 0 1-1v-6.999l1.293 1.293a1 1 0 0 0 1.414-1.414L12 3.172z" />
-                    </svg>
-                  )}
+                 
                   <span>{item.label}</span>
                 </Link>
               </li>
@@ -84,25 +74,14 @@ const NavBar = () => {
         className={`${open ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'} lg:hidden overflow-hidden transition-all duration-300`}
       >
         <nav className="px-4 pb-4 ">
-          <ul className="flex flex-col gap-3 rounded-2xl bg-[#153F74] p-4">
+          <ul className="flex flex-col gap-2 rounded-2xl bg-white p-3 border border-[#153F74]/30 shadow-sm">
             {navItems.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
                   onClick={closeMenu}
-                  className="flex items-center gap-3 rounded-xl px-3 py-3 text-2xl font-bold text-white hover:bg-white/10"
+                  className="flex items-center gap-3 rounded-lg px-3 py-2 text-base font-medium text-[#153F74] hover:bg-[#153F74]/5"
                 >
-                  {item.withIcon && (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="h-6 w-6"
-                      aria-hidden
-                    >
-                      <path d="M12 3.172 2.293 12.88a1 1 0 0 0 1.414 1.414L5 13.001V20a1 1 0 0 0 1 1h4v-5h4v5h4a1 1 0 0 0 1-1v-6.999l1.293 1.293a1 1 0 0 0 1.414-1.414L12 3.172z" />
-                    </svg>
-                  )}
                   <span>{item.label}</span>
                 </Link>
               </li>

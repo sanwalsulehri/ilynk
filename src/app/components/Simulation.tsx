@@ -25,21 +25,9 @@ const Simulation = () => {
   }
   return (
     <>
-    <section
-      className="relative w-full"
-      style={{
-        backgroundImage:
-          "linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 70%, rgba(220,234,253,0.5) 85%, #DCEAFD 100%)",
-      }}
-    >
-    </section>
-
     <motion.section
       className="relative w-full"
-      style={{
-        backgroundImage:
-          "linear-gradient(to bottom, rgba(220,234,253,0) 0%, rgba(220,234,253,0.25) 35%, #DCEAFD 50%, #29589C 75%, #29589C 100%)",
-      }}
+      style={{ backgroundColor: "rgba(41,88,156,0.06)" }}
       initial={{ opacity: 0, y: 28 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.1 }}
@@ -64,7 +52,7 @@ const Simulation = () => {
           variants={{ hidden: {}, show: { transition: { staggerChildren: 0.14, delayChildren: 0.12 } } }}
         >
           <motion.div
-            className="rounded-3xl border border-[#3E5F88] bg-[#F4F4F4]  px-6 py-8 lg:px-10 lg:py-14 lg:basis-[55%]"
+            className="rounded-3xl border border-[#3E5F88] bg-[#F4F4F4] px-6 py-8 lg:px-10 lg:py-14 lg:basis-[55%]"
             variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
           >
@@ -130,6 +118,7 @@ const Simulation = () => {
 
 
 
+      <div className="bg-white">
       <div className="mx-auto max-w-7xl px-4 py-12 lg:py-16">
         <motion.div
           className="flex flex-col lg:flex-row gap-4 lg:gap-6 justify-between lg:h-[560px] xl:h-[607px]"
@@ -196,11 +185,12 @@ const Simulation = () => {
           </motion.div>
         </motion.div>
       </div>
+</div>
 
 
       <div className="mx-auto max-w-7xl px-4 py-16 lg:py-20">
           <motion.h2
-            className="font-bold tracking-tight text-[#000] text-[32px] lg:text-[45px]"
+            className="font-bold tracking-tight text-[#143E70] text-[32px] lg:text-[45px]"
             initial={{ opacity: 0, y: -24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -285,88 +275,82 @@ const Simulation = () => {
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
-        <div className="mx-auto 2xl:max-w-7xl pl-4 pr-4 lg:pl-4 lg:pr-4 xl:pl-0 py-16 lg:py-20">
+        <div className="mx-auto max-w-7xl px-4 py-16 lg:py-20">
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 items-stretch">
-          {/* Left black statement panel */}
-            <div className="bg-black text-white rounded-r-[28px] lg:rounded-l-none rounded-l-[28px] lg:rounded-r-[40px] flex items-center justify-center px-6 py-10 lg:px-10 lg:py-14 lg:basis-[45%]">
+          {/* Left black statement panel (original text) */}
+            <div className="text-white rounded-r-[28px] lg:rounded-l-none rounded-l-[28px] lg:rounded-r-[40px] flex justify-center px-6 py-10 lg:px-10 lg:py-14 lg:basis-[45%]">
              <motion.div
-               className="flex flex-col gap-6 lg:gap-10"
+               className="flex flex-col "
                initial="hidden"
                whileInView="show"
                viewport={{ once: true, amount: 0.2 }}
                variants={{ hidden: {}, show: { transition: { staggerChildren: 0.12 } } }}
              >
-               <motion.h3 className=" leading-[1.1] font-times font-bold text-[36px] lg:text-[56px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>WE CAN</motion.h3>
-               <motion.h3 className=" leading-[1.1] font-times font-bold text-[36px] lg:text-[56px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>MAKE YOUR</motion.h3>
-               <motion.h3 className=" leading-[1.1] font-times font-bold text-[36px] lg:text-[56px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>VISION TURN</motion.h3>
-               <motion.h3 className=" leading-[1.1] font-times font-bold text-[36px] lg:text-[56px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>INTO REALITY</motion.h3>
+               <motion.h3 className=" leading-[1.1]  font-bold text-[36px] lg:text-[56px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>WE CAN</motion.h3>
+               <motion.h3 className=" leading-[1.1]  font-bold text-[36px] lg:text-[56px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>MAKE YOUR</motion.h3>
+               <motion.h3 className=" leading-[1.1]  font-bold text-[36px] lg:text-[56px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>VISION TURN</motion.h3>
+               <motion.h3 className=" leading-[1.1]  font-bold text-[36px] lg:text-[56px]" variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0, transition: { duration: 0.55 } } }}>INTO REALITY</motion.h3>
              </motion.div>
           </div>
 
-          {/* Right form area */}
+          {/* Right form area - minimalist underline inputs on blue bg */}
             <div className="lg:basis-[55%] w-full">
              <motion.form
-               className="flex flex-col xl:w-[90%] mx-auto gap-6 text-white"
-               initial="hidden"
-               whileInView="show"
-               viewport={{ once: true, amount: 0.2 }}
-               variants={{ hidden: {}, show: { transition: { staggerChildren: 0.1 } } }}
-             >
-              {/* Name */}
-               <motion.div className="flex flex-col lg:flex-row lg:items-center lg:gap-6 gap-2" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
-                <label className="lg:w-[280px] text-[21px] font-semibold leading-tight">Name</label>
-                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-[7px] text-[16px] lg:text-[18px] outline-none" />
-               </motion.div>
+                className="grid grid-cols-1 lg:grid-cols-2 gap-6"
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.2 }}
+              variants={{ hidden: {}, show: { transition: { staggerChildren: 0.1 } } }}
+            >
+             {/* Name */}
+                <motion.div className="flex flex-col gap-1 col-span-1" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.3 } } }}>
+                 <label className="text-white/90 text-[15px] lg:text-[16px] font-medium leading-tight">Name</label>
+                 <input type="text" placeholder="John Doe" className="w-full h-10 bg-transparent text-white placeholder:text-white/60 px-1.5 border-b border-white/40 focus:border-white focus:outline-none transition" />
+              </motion.div>
 
-              {/* Work Email */}
-               <motion.div className="flex flex-col lg:flex-row lg:items-center lg:gap-6 gap-2" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
-                <label className="lg:w-[280px] text-[21px] font-semibold leading-tight">Work Email</label>
-                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-[7px] text-[16px] lg:text-[18px] outline-none"  />
-               </motion.div>
+             {/* Work Email */}
+                <motion.div className="flex flex-col gap-1 col-span-1" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.3 } } }}>
+                 <label className="text-white/90 text-[15px] lg:text-[16px] font-medium leading-tight">Work Email</label>
+                 <input type="email" placeholder="name@company.com" className="w-full h-10 bg-transparent text-white placeholder:text-white/60 px-1.5 border-b border-white/40 focus:border-white focus:outline-none transition" />
+              </motion.div>
 
-              {/* Contact Number */}
-               <motion.div className="flex flex-col lg:flex-row lg:items-center lg:gap-6 gap-2" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
-                <label className="lg:w-[280px] text-[21px] font-semibold leading-tight">Contact Number</label>
-                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-[7px] text-[16px] lg:text-[18px] outline-none"  />
-               </motion.div>
+             {/* Contact Number */}
+                <motion.div className="flex flex-col gap-1 col-span-1" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.3 } } }}>
+                 <label className="text-white/90 text-[15px] lg:text-[16px] font-medium leading-tight">Contact Number</label>
+                 <input type="tel" placeholder="+1 555 000 1234" className="w-full h-10 bg-transparent text-white placeholder:text-white/60 px-1.5 border-b border-white/40 focus:border-white focus:outline-none transition" />
+              </motion.div>
 
-              {/* Country */}
-               <motion.div className="flex flex-col lg:flex-row lg:items-center lg:gap-6 gap-2" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
-                <label className="lg:w-[280px] text-[21px] font-semibold leading-tight">Country</label>
-                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-[7px] text-[16px] lg:text-[18px] outline-none"  />
-               </motion.div>
+             {/* Country */}
+                <motion.div className="flex flex-col gap-1 col-span-1" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.3 } } }}>
+                 <label className="text-white/90 text-[15px] lg:text-[16px] font-medium leading-tight">Country</label>
+                 <input type="text" placeholder="United States" className="w-full h-10 bg-transparent text-white placeholder:text-white/60 px-1.5 border-b border-white/40 focus:border-white focus:outline-none transition" />
+              </motion.div>
 
-              {/* Focused Solution */}
-               <motion.div className="flex flex-col lg:flex-row lg:items-center lg:gap-6 gap-2" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
-                <label className="lg:w-[280px] text-[21px] font-semibold leading-tight">Focused Solution</label>
-                <input className="flex-1 w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 pl-4 py-[7px] text-[16px] lg:text-[18px] outline-none"  />
-               </motion.div>
+             {/* Focused Solution */}
+                <motion.div className="flex flex-col gap-1 col-span-1 lg:col-span-2" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.3 } } }}>
+                 <label className="text-white/90 text-[15px] lg:text-[16px] font-medium leading-tight">Focused Solution</label>
+                 <input type="text" placeholder="e.g., VR Training, AI Agent, Visualization" className="w-full h-10 bg-transparent text-white placeholder:text-white/60 px-1.5 border-b border-white/40 focus:border-white focus:outline-none transition" />
+              </motion.div>
 
-              {/* Brief */}
-               <motion.div className="flex flex-col gap-2" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
-                <label className="text-[21px] font-semibold leading-tight">Give Us A Brief About Your Idea</label>
-                <textarea rows={3} className="w-full rounded-[10px] bg-white text-[#0F2E57] placeholder:text-[#6B7A90] px-4 py-3 lg:py-4 text-[16px] lg:text-[18px] outline-none"  />
-               </motion.div>
+             {/* Brief */}
+                <motion.div className="flex flex-col gap-1 col-span-1 lg:col-span-2" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.3 } } }}>
+                 <label className="text-white/90 text-[15px] lg:text-[16px] font-medium leading-tight">Give Us A Brief About Your Idea</label>
+                 <textarea rows={3} placeholder="Tell us about your goals, timelines, and success criteria" className="w-full bg-transparent text-white placeholder:text-white/60 px-1.5 py-2 border-b border-white/40 focus:border-white focus:outline-none transition" />
+              </motion.div>
 
-             <motion.div className="flex flex-col sm:flex-row gap-4 sm:justify-end pt-4" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}>
-              <motion.button type="reset" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }} className="px-8 cursor-pointer h-[52px] lg:h-[56px] rounded-full text-[20px] lg:text-[26px] font-semibold uppercase tracking-[0.2em] text-[#143E70] bg-gradient-to-b from-[#F3F6FA] to-[#CAD6E4] shadow-[0_14px_28px_rgba(0,0,0,0.3)] border border-[#9FB3CA] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] hover:bg-[#153F74]  hover:-translate-y-1 active:scale-95 active:translate-y-0">
-                  CLEAR
-              </motion.button>
-              <motion.button type="submit" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }} className="px-8 h-[52px] cursor-pointer lg:h-[56px] rounded-full text-[20px] lg:text-[26px] font-semibold uppercase tracking-[0.2em] text-[#143E70] bg-gradient-to-b from-[#F3F6FA] to-[#CAD6E4] shadow-[0_14px_28px_rgba(0,0,0,0.3)] border border-[#9FB3CA] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] hover:bg-[#153F74]  hover:-translate-y-1 active:scale-95 active:translate-y-0">
-                  SUBMIT
-              </motion.button>
-             </motion.div>
-             </motion.form>
+              <motion.div className="flex flex-col sm:flex-row gap-3 sm:justify-end pt-3 col-span-1 lg:col-span-2" variants={{ hidden: { opacity: 0, y: 18 }, show: { opacity: 1, y: 0, transition: { duration: 0.3 } } }}>
+               <motion.button type="reset" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }} className="px-5 h-10 rounded-full text-[15px] lg:text-[16px] font-semibold tracking-wide text-[#29589C] bg-white/95 hover:bg-white transition cursor-pointer">
+                  Clear
+             </motion.button>
+               <motion.button type="submit" initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }} className="px-7 h-10 rounded-full text-[15px] lg:text-[16px] font-semibold tracking-wide text-[#29589C] bg-white/95 hover:bg-white transition cursor-pointer">
+                  Submit
+             </motion.button>
+           </motion.div>
+            </motion.form>
           </div>
         </div>
       </div>
-      <div
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-20 xl:h-24 lg:h-20"
-        style={{
-          backgroundImage:
-            "linear-gradient(to bottom, rgba(41,88,156,0) 0%, rgba(255,255,255,0.7) 60%, #FFFFFF 100%)",
-        }}
-      />
+      
       </motion.section>
 
     
